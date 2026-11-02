@@ -1,13 +1,12 @@
 #include <AccelStepper.h>
 #include <Servo.h>
-#include <
 #define motorInterfaceType 4
 
 const int joyX = A0; // Analog pin for the X-axis of the joystick
 const int joyY = A1; // Analog pin for the Y-axis of the joystick
 
 // May use a MUX switch here so we have wider range of motion for the arm. For now, we will just use 3 servos.
-// Note: Will actuall defo need a MUX lol, all the digital pins on the arduino are saturated and we still need to add some more functions such as release button and stuff.
+// Note: Will actually defo need a MUX lol, all the digital pins on the arduino are saturated and we still need to add some more functions such as release button and stuff.
 const int shoulder = 11;
 const int elbow = 12;
 const int wrist = 13;
