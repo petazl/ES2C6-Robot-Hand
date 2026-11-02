@@ -2831,7 +2831,7 @@
 		)
 		(uuid "99ad16a1-d7d5-422c-9df9-9e0e0cff87ea")
 	)
-	(text "Servos\n"
+	(text "Servos (PWM)\n"
 		(exclude_from_sim no)
 		(at 96.012 60.96 0)
 		(effects
