@@ -5,6 +5,146 @@
 	(uuid "bf578e05-ff97-4f5b-9fce-fae906b02b66")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:Arduino_UNO_R3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -673,6 +813,315 @@
 						)
 					)
 					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Motor:Motor_Servo"
+			(pin_names
+				(offset 0.0254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "M"
+				(at -5.08 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Motor_Servo"
+				(at -5.08 -4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
+				(at 0 -4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Servo Motor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "PinHeader*P2.54mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Motor_Servo_0_1"
+				(polyline
+					(pts
+						(xy 2.413 1.778) (xy 1.905 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 1.778) (xy 2.286 1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 -1.778) (xy 2.032 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.413 -1.778) (xy 2.286 -1.397)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.413 -1.778)
+					(mid 1.2406 0)
+					(end 2.413 1.778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.175 0)
+					(radius 0.1778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.175 0)
+					(radius 1.4224)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 3.556) (xy -5.08 3.556) (xy -5.08 -3.556) (xy 6.35 -3.556) (xy 6.35 1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.969 2.794)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 4.445) (xy 2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 6.477 3.302)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.35 4.445)
+					(mid 7.4487 4.2737)
+					(end 7.62 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 6.985 3.81)
+					(radius 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 3.175) (xy 4.191 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Motor_Servo_1_1"
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "PWM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2219,6 +2668,30 @@
 		)
 	)
 	(rectangle
+		(start 30.48 66.04)
+		(end 71.12 111.76)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0e433c36-472f-4c8d-baee-e9cd389871ab")
+	)
+	(rectangle
+		(start 233.68 55.88)
+		(end 276.86 78.74)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2acf20e5-37d2-4aa1-8c60-d8f52fb717a3")
+	)
+	(rectangle
 		(start 25.4 25.4)
 		(end 76.2 62.23)
 		(stroke
@@ -2243,8 +2716,20 @@
 		(uuid "8af18279-b579-4d33-96b8-2a72cc88d34a")
 	)
 	(rectangle
-		(start 107.95 25.4)
-		(end 184.15 101.6)
+		(start 187.96 55.88)
+		(end 228.6 78.74)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "a6c22ac1-bf61-4ab7-a1ca-d2cd1705b47c")
+	)
+	(rectangle
+		(start 95.25 25.4)
+		(end 171.45 101.6)
 		(stroke
 			(width 0)
 			(type default)
@@ -2268,7 +2753,7 @@
 	)
 	(text "Ultrasonic Sensor\n"
 		(exclude_from_sim no)
-		(at 65.786 84.074 0)
+		(at 266.446 68.834 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2286,9 +2771,19 @@
 		)
 		(uuid "2830f3c3-4e34-4c16-a2e3-45144dcbe25e")
 	)
+	(text "Elbow\n"
+		(exclude_from_sim no)
+		(at 59.69 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3e9d28f1-48bd-4fa9-b52d-8a21287c6187")
+	)
 	(text "MCU\n"
 		(exclude_from_sim no)
-		(at 145.796 24.13 0)
+		(at 133.096 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2296,9 +2791,19 @@
 		)
 		(uuid "462a930a-f3cd-4f94-b1b7-8c38bb8499c8")
 	)
+	(text "Wrist\n"
+		(exclude_from_sim no)
+		(at 59.436 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "571842e5-eb69-4377-a8f9-202efd777e30")
+	)
 	(text "Sensor"
 		(exclude_from_sim no)
-		(at 116.586 59.69 0)
+		(at 103.886 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2306,9 +2811,19 @@
 		)
 		(uuid "5728730b-97e6-4301-8ef2-c4b49c4c307f")
 	)
+	(text "Shoulder"
+		(exclude_from_sim no)
+		(at 61.214 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6f1ffc63-9ba7-40e1-9740-e82a0c70a876")
+	)
 	(text "Ultrasonic"
 		(exclude_from_sim no)
-		(at 116.332 57.658 0)
+		(at 103.632 57.658 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2318,7 +2833,7 @@
 	)
 	(text "Gripper Control"
 		(exclude_from_sim no)
-		(at 116.332 51.816 0)
+		(at 103.632 51.816 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2338,13 +2853,23 @@
 	)
 	(text "Stepper Motor"
 		(exclude_from_sim no)
-		(at 116.078 68.834 0)
+		(at 103.378 68.834 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "d15081cd-fcbf-40c6-b922-750d463e611a")
+	)
+	(text "Force Sensor"
+		(exclude_from_sim no)
+		(at 221.488 57.912 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d5852e0e-cbe1-4492-9234-d24f87c5ff4f")
 	)
 	(text "Operation Amplifier"
 		(exclude_from_sim no)
@@ -2357,13 +2882,43 @@
 		(uuid "e43f8078-9473-4138-a4ab-7acaaadaf955")
 	)
 	(junction
-		(at 146.05 90.17)
+		(at 39.37 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1741c970-3a07-4d28-a7fd-434abfd1752d")
+	)
+	(junction
+		(at 133.35 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "32f88f10-7d78-484d-8b56-cd2a45637647")
 	)
+	(junction
+		(at 39.37 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e8638c5-38ae-4248-979e-b25e19b22638")
+	)
+	(junction
+		(at 38.1 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc62ba2a-2fe5-4840-be54-2536ad4c7882")
+	)
+	(junction
+		(at 212.09 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f419c302-62a2-42a3-9a41-c1bb768cffd5")
+	)
+	(junction
+		(at 38.1 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5dfd7d2-5a92-44c0-9637-15ce1ffc064d")
+	)
 	(no_connect
-		(at 158.75 55.88)
+		(at 146.05 55.88)
 		(uuid "10d59b33-c33d-49cb-8c4d-2cd175c44da3")
 	)
 	(no_connect
@@ -2371,11 +2926,11 @@
 		(uuid "12cd5340-b332-40e7-b2ee-4d6126608f84")
 	)
 	(no_connect
-		(at 158.75 45.72)
+		(at 146.05 45.72)
 		(uuid "242a18db-bd2e-4030-9517-602ead05f05c")
 	)
 	(no_connect
-		(at 133.35 48.26)
+		(at 120.65 48.26)
 		(uuid "38f59a6f-f2ff-44a7-8216-651a02fec010")
 	)
 	(no_connect
@@ -2383,7 +2938,7 @@
 		(uuid "49f41a2d-dc12-49be-b2a8-5e04f494ac50")
 	)
 	(no_connect
-		(at 158.75 50.8)
+		(at 146.05 50.8)
 		(uuid "4b32046a-bdd3-440f-bce5-ef660506d676")
 	)
 	(no_connect
@@ -2395,7 +2950,7 @@
 		(uuid "796c84fe-9275-404e-ae4c-47bf8579e880")
 	)
 	(no_connect
-		(at 133.35 45.72)
+		(at 120.65 45.72)
 		(uuid "bd7acaaf-2c48-4abf-85d3-5debdbb90496")
 	)
 	(no_connect
@@ -2407,12 +2962,22 @@
 		(uuid "cc07b3e4-68be-47ec-ba52-ebcd1f7c72a0")
 	)
 	(no_connect
-		(at 148.59 35.56)
+		(at 135.89 35.56)
 		(uuid "eca08f4c-f1e1-46be-9ca2-1f00172cb351")
 	)
 	(no_connect
 		(at 245.11 35.56)
 		(uuid "f330a062-e65c-4803-aa23-a4e232688a8f")
+	)
+	(wire
+		(pts
+			(xy 33.02 76.2) (xy 40.64 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "006a708a-6a46-4024-89c3-7ab2189c54a2")
 	)
 	(wire
 		(pts
@@ -2456,6 +3021,16 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 68.58) (xy 223.52 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b5f3f14-88ec-410d-a6d4-ecbff32be789")
+	)
+	(wire
+		(pts
 			(xy 245.11 40.64) (xy 251.46 40.64)
 		)
 		(stroke
@@ -2466,7 +3041,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 76.2) (xy 133.35 76.2)
+			(xy 234.95 60.96) (xy 241.3 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ec15e30-f351-4285-970e-d2399652f71a")
+	)
+	(wire
+		(pts
+			(xy 114.3 76.2) (xy 120.65 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2476,7 +3061,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 63.5) (xy 133.35 63.5)
+			(xy 114.3 63.5) (xy 120.65 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2486,7 +3071,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 88.9) (xy 146.05 90.17)
+			(xy 133.35 88.9) (xy 133.35 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2496,17 +3081,7 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 63.5) (xy 124.46 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25996400-9204-4947-aa12-62bd13e0b75a")
-	)
-	(polyline
-		(pts
-			(xy 124.46 60.96) (xy 125.73 60.96)
+			(xy 111.76 60.96) (xy 113.03 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2536,7 +3111,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 55.88) (xy 133.35 55.88)
+			(xy 114.3 55.88) (xy 120.65 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2546,7 +3121,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 66.04) (xy 165.1 66.04)
+			(xy 146.05 66.04) (xy 152.4 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2556,7 +3131,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 90.17) (xy 146.05 90.17)
+			(xy 130.81 90.17) (xy 133.35 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2566,7 +3141,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 90.17) (xy 148.59 90.17)
+			(xy 133.35 90.17) (xy 135.89 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2576,7 +3151,27 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 34.29) (xy 143.51 35.56)
+			(xy 38.1 81.28) (xy 40.64 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45b290d6-f32a-4626-8f7e-ebd2cb715b4e")
+	)
+	(wire
+		(pts
+			(xy 38.1 92.71) (xy 38.1 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "485b9445-0a5a-4e52-8014-dc9b18d59e0c")
+	)
+	(wire
+		(pts
+			(xy 130.81 34.29) (xy 130.81 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2586,7 +3181,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 68.58) (xy 133.35 68.58)
+			(xy 39.37 78.74) (xy 39.37 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a6705ac-0386-4518-b0fc-ec625cf51db7")
+	)
+	(wire
+		(pts
+			(xy 114.3 68.58) (xy 120.65 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2596,7 +3201,17 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 83.82) (xy 40.64 83.82)
+			(xy 38.1 92.71) (xy 40.64 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54b34871-53bb-4e24-a273-294c93046755")
+	)
+	(wire
+		(pts
+			(xy 238.76 68.58) (xy 241.3 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2606,7 +3221,27 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 68.58) (xy 165.1 68.58)
+			(xy 33.02 87.63) (xy 40.64 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c62e70-bc8f-464c-b9a9-e041267e4245")
+	)
+	(wire
+		(pts
+			(xy 190.5 68.58) (xy 196.85 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57db0787-82a1-4833-8bf3-0ff78c4b623a")
+	)
+	(wire
+		(pts
+			(xy 146.05 68.58) (xy 152.4 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2616,7 +3251,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 50.8) (xy 133.35 50.8)
+			(xy 114.3 50.8) (xy 120.65 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2626,17 +3261,27 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 63.5) (xy 125.73 63.5)
+			(xy 111.76 50.8) (xy 113.03 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6cc9002d-e556-405c-834e-2614f2d2e683")
+		(uuid "6ae2b7c6-e807-41ad-8fb9-37faa8322509")
 	)
 	(wire
 		(pts
-			(xy 158.75 60.96) (xy 165.1 60.96)
+			(xy 212.09 68.58) (xy 212.09 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c2489b6-8abc-4d29-a16a-b19aea4d70b3")
+	)
+	(wire
+		(pts
+			(xy 146.05 60.96) (xy 152.4 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2646,7 +3291,7 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 73.66) (xy 125.73 73.66)
+			(xy 111.76 73.66) (xy 113.03 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2656,13 +3301,33 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 34.29) (xy 151.13 35.56)
+			(xy 234.95 66.04) (xy 241.3 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ee0514e-4c4f-45e9-b6b3-9e7eaef6243d")
+	)
+	(wire
+		(pts
+			(xy 138.43 34.29) (xy 138.43 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7f189090-16a9-4cf8-9029-a6627c17403a")
+	)
+	(wire
+		(pts
+			(xy 40.64 78.74) (xy 39.37 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "805603ba-c168-4a20-aea5-18fb969c9a14")
 	)
 	(wire
 		(pts
@@ -2676,7 +3341,7 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 55.88) (xy 124.46 60.96)
+			(xy 111.76 55.88) (xy 111.76 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2696,7 +3361,7 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 55.88) (xy 125.73 55.88)
+			(xy 111.76 55.88) (xy 113.03 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2706,13 +3371,23 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 73.66) (xy 124.46 63.5)
+			(xy 111.76 73.66) (xy 111.76 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8739fa55-8fc6-4b13-81dc-2f3edc02851d")
+	)
+	(wire
+		(pts
+			(xy 234.95 63.5) (xy 241.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87b73fa9-2d96-4c44-b8bf-86297490b881")
 	)
 	(wire
 		(pts
@@ -2746,6 +3421,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 99.06) (xy 40.64 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ebfb69e-3dd9-4a55-9035-d8527493a10f")
+	)
+	(wire
+		(pts
 			(xy 30.48 39.37) (xy 39.37 39.37)
 		)
 		(stroke
@@ -2756,13 +3441,43 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 88.9) (xy 143.51 90.17)
+			(xy 223.52 68.58) (xy 223.52 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9609b29b-3fa2-453b-aff7-ba025b9e838e")
+	)
+	(wire
+		(pts
+			(xy 40.64 104.14) (xy 38.1 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e8879a-5b93-4c1b-a60a-9985d57594fd")
+	)
+	(wire
+		(pts
+			(xy 130.81 88.9) (xy 130.81 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9fe53558-56cd-4a5a-880c-ece9409de5c5")
+	)
+	(polyline
+		(pts
+			(xy 111.76 53.34) (xy 111.76 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a50c30fa-0678-4000-948a-3a0fd97c41ad")
 	)
 	(wire
 		(pts
@@ -2776,13 +3491,33 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 53.34) (xy 125.73 53.34)
+			(xy 111.76 53.34) (xy 113.03 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b7c02f35-1a75-479f-a148-cd0ef8504168")
+	)
+	(wire
+		(pts
+			(xy 39.37 90.17) (xy 40.64 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b872cbdd-4c11-498f-863e-92c35664e835")
+	)
+	(wire
+		(pts
+			(xy 39.37 101.6) (xy 40.64 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9a68bb1-1b2f-4041-90c5-813010a3dc9a")
 	)
 	(wire
 		(pts
@@ -2796,7 +3531,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 63.5) (xy 165.1 63.5)
+			(xy 146.05 63.5) (xy 152.4 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2806,7 +3541,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 78.74) (xy 133.35 78.74)
+			(xy 114.3 78.74) (xy 120.65 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2816,7 +3551,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 71.12) (xy 133.35 71.12)
+			(xy 114.3 71.12) (xy 120.65 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2834,9 +3569,19 @@
 		)
 		(uuid "c5dcb4ba-1596-496a-9e69-755afafaf2fa")
 	)
+	(polyline
+		(pts
+			(xy 111.76 66.04) (xy 113.03 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5f2fbe8-1562-4533-a1a3-f39cc46d844c")
+	)
 	(wire
 		(pts
-			(xy 127 58.42) (xy 133.35 58.42)
+			(xy 114.3 58.42) (xy 120.65 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2846,7 +3591,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 73.66) (xy 133.35 73.66)
+			(xy 39.37 78.74) (xy 39.37 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7391e7f-eae3-4a9a-97ad-14a81d2f38d1")
+	)
+	(wire
+		(pts
+			(xy 114.3 73.66) (xy 120.65 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2864,19 +3619,9 @@
 		)
 		(uuid "ca16a591-9407-450e-b779-8a0ba1941dfd")
 	)
-	(polyline
-		(pts
-			(xy 124.46 49.53) (xy 124.46 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce4110d5-a9a1-4758-8a9e-117859e0a693")
-	)
 	(wire
 		(pts
-			(xy 127 60.96) (xy 133.35 60.96)
+			(xy 114.3 60.96) (xy 120.65 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2884,35 +3629,15 @@
 		)
 		(uuid "d1ff499b-9d18-411a-b952-889bb6c1ac59")
 	)
-	(polyline
-		(pts
-			(xy 124.46 49.53) (xy 125.73 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7940fff-a850-44d3-a0dc-5048a68cfa4d")
-	)
 	(wire
 		(pts
-			(xy 127 53.34) (xy 133.35 53.34)
+			(xy 114.3 53.34) (xy 120.65 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d82a1b86-cc43-44aa-93fe-d9d9a8ef6987")
-	)
-	(polyline
-		(pts
-			(xy 124.46 53.34) (xy 124.46 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db7a23d7-cc07-4dbc-97d8-c0fa94efb853")
 	)
 	(wire
 		(pts
@@ -2926,13 +3651,53 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 88.9) (xy 148.59 90.17)
+			(xy 135.89 88.9) (xy 135.89 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "df958202-176b-4ead-af12-7e9cd98c544f")
+	)
+	(wire
+		(pts
+			(xy 39.37 90.17) (xy 39.37 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0d70962-d377-495f-906e-f99d526ad03a")
+	)
+	(wire
+		(pts
+			(xy 209.55 68.58) (xy 212.09 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6caa26d-12e7-4cba-be6c-420d16c878b0")
+	)
+	(wire
+		(pts
+			(xy 212.09 68.58) (xy 214.63 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e89b1ce9-c391-49ae-9b11-b3f410544aab")
+	)
+	(wire
+		(pts
+			(xy 38.1 104.14) (xy 38.1 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef121cb7-4f3f-49c3-9b46-038cf447b115")
 	)
 	(wire
 		(pts
@@ -2946,7 +3711,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 66.04) (xy 133.35 66.04)
+			(xy 114.3 66.04) (xy 120.65 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2956,7 +3721,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 86.36) (xy 38.1 83.82)
+			(xy 238.76 71.12) (xy 238.76 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2965,7 +3730,7 @@
 		(uuid "fe4f46d3-a995-466d-8f81-fd544d3bc106")
 	)
 	(label "A1"
-		(at 165.1 63.5 180)
+		(at 152.4 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2975,7 +3740,7 @@
 		(uuid "026cb902-47a2-47f6-94ee-f2c3808832ee")
 	)
 	(label "D2"
-		(at 127 50.8 0)
+		(at 114.3 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2985,7 +3750,7 @@
 		(uuid "09d4a88a-5fb7-4b99-9682-02517b9137ab")
 	)
 	(label "D12"
-		(at 127 76.2 0)
+		(at 114.3 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2995,7 +3760,7 @@
 		(uuid "186ce9fb-2ae7-4268-b0d1-5418d896bd97")
 	)
 	(label "D9"
-		(at 127 68.58 0)
+		(at 114.3 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3005,7 +3770,7 @@
 		(uuid "1b10ed93-4414-4881-ab5d-9a3527ad5cf8")
 	)
 	(label "D4"
-		(at 127 55.88 0)
+		(at 114.3 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3025,7 +3790,17 @@
 		(uuid "28e46af5-e589-42fe-93dd-718079c00131")
 	)
 	(label "D5"
-		(at 127 58.42 0)
+		(at 234.95 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "302de251-68eb-44e6-83ed-2211cd4d828a")
+	)
+	(label "D5"
+		(at 114.3 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3045,7 +3820,7 @@
 		(uuid "3d3dca02-110e-45ba-8d24-9a3ceb0c12a4")
 	)
 	(label "A3"
-		(at 165.1 68.58 180)
+		(at 152.4 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3055,7 +3830,7 @@
 		(uuid "3f49fecc-351a-494b-beac-ee0b3d109cf6")
 	)
 	(label "D3"
-		(at 127 53.34 0)
+		(at 114.3 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3065,7 +3840,7 @@
 		(uuid "4364a198-ddf7-4782-9eb8-f1dde5ea241d")
 	)
 	(label "D13"
-		(at 127 78.74 0)
+		(at 114.3 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3073,6 +3848,16 @@
 			(justify left bottom)
 		)
 		(uuid "4572ff73-c29c-4b34-87e4-aa1d1f409fb0")
+	)
+	(label "FSR"
+		(at 190.5 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "48625976-e178-4493-bb0d-f47c407d9e65")
 	)
 	(label "D2"
 		(at 33.02 44.45 0)
@@ -3084,8 +3869,18 @@
 		)
 		(uuid "493daaab-f1f8-46a6-867d-45fbd0779b06")
 	)
+	(label "D12"
+		(at 33.02 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b11d175-5ee2-4122-a154-d33a16f21ece")
+	)
 	(label "D7"
-		(at 127 63.5 0)
+		(at 114.3 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3093,6 +3888,26 @@
 			(justify left bottom)
 		)
 		(uuid "5233c568-e33b-4183-a3be-ecfd61dcfb2e")
+	)
+	(label "D4"
+		(at 234.95 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59d24fcb-04f6-4e5b-9997-09b4a9516f47")
+	)
+	(label "D6"
+		(at 234.95 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "60aaaef3-a163-4272-b268-462a2c120d13")
 	)
 	(label "FSR"
 		(at 251.46 40.64 180)
@@ -3104,8 +3919,18 @@
 		)
 		(uuid "65a702ee-ccbf-449b-a61b-aa52c1fb1b85")
 	)
+	(label "A0"
+		(at 212.09 74.93 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e3336ca-071f-4d96-a141-0571b3860c6c")
+	)
 	(label "A2"
-		(at 165.1 66.04 180)
+		(at 152.4 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3115,7 +3940,7 @@
 		(uuid "724f7419-91b9-41ec-b7eb-31f8c622586c")
 	)
 	(label "D10"
-		(at 127 71.12 0)
+		(at 114.3 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3125,7 +3950,7 @@
 		(uuid "80572c76-b270-45a5-aaed-7a79cdb0cb8c")
 	)
 	(label "D8"
-		(at 127 66.04 0)
+		(at 114.3 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3145,7 +3970,7 @@
 		(uuid "9c6f6f3e-f266-46d8-95a1-5a90d870568f")
 	)
 	(label "D6"
-		(at 127 60.96 0)
+		(at 114.3 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3155,7 +3980,7 @@
 		(uuid "b4670dd0-10b0-44c2-a182-272d60af44cb")
 	)
 	(label "A0"
-		(at 165.1 60.96 180)
+		(at 152.4 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3195,7 +4020,7 @@
 		(uuid "e631fdb6-6656-43d0-a703-00f666c8c629")
 	)
 	(label "D11"
-		(at 127 73.66 0)
+		(at 114.3 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3203,6 +4028,26 @@
 			(justify left bottom)
 		)
 		(uuid "e72653eb-715c-4458-bd68-4d46fb75d3f1")
+	)
+	(label "D11"
+		(at 33.02 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed9bba1f-0100-4a17-b23d-62875e56ff9d")
+	)
+	(label "D13"
+		(at 33.02 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef75cc62-c9cf-4589-a295-486dba8021b0")
 	)
 	(symbol
 		(lib_id "power:+12V")
@@ -3521,7 +4366,7 @@
 	)
 	(symbol
 		(lib_id "MCU_Module:Arduino_UNO_R3")
-		(at 146.05 60.96 0)
+		(at 133.35 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3531,7 +4376,7 @@
 		(dnp no)
 		(uuid "07f96d5d-ca67-4283-b35e-e2bbf5c2e218")
 		(property "Reference" "A1"
-			(at 161.29 27.178 0)
+			(at 148.59 27.178 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3542,7 +4387,7 @@
 			)
 		)
 		(property "Value" "Arduino_UNO_R3"
-			(at 161.29 29.718 0)
+			(at 148.59 29.718 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3553,7 +4398,7 @@
 			)
 		)
 		(property "Footprint" "Module:Arduino_UNO_R3"
-			(at 146.05 60.96 0)
+			(at 133.35 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3565,7 +4410,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.arduino.cc/en/Main/arduinoBoardUno"
-			(at 146.05 60.96 0)
+			(at 133.35 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3576,7 +4421,7 @@
 			)
 		)
 		(property "Description" "Arduino UNO Microcontroller Module, release 3"
-			(at 146.05 60.96 0)
+			(at 133.35 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3693,7 +4538,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 151.13 34.29 0)
+		(at 39.37 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3702,9 +4547,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "34b18326-6043-4b5d-a7da-cc6b4cd2b015")
-		(property "Reference" "#PWR03"
-			(at 151.13 38.1 0)
+		(uuid "273a74eb-d5db-4c37-8fba-d89edb7b7452")
+		(property "Reference" "#PWR013"
+			(at 39.37 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3715,7 +4560,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 151.13 29.21 0)
+			(at 39.37 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3725,7 +4570,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 34.29 0)
+			(at 39.37 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3736,7 +4581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 34.29 0)
+			(at 39.37 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3747,7 +4592,85 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 151.13 34.29 0)
+			(at 39.37 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "55c4c1d7-8d9f-49b8-833d-e4bc9fdec3b4")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 138.43 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34b18326-6043-4b5d-a7da-cc6b4cd2b015")
+		(property "Reference" "#PWR03"
+			(at 138.43 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 138.43 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 138.43 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3771,7 +4694,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 143.51 34.29 0)
+		(at 130.81 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3782,7 +4705,7 @@
 		(fields_autoplaced yes)
 		(uuid "57caa11b-ac27-4a3c-b8df-1aac9e6e886d")
 		(property "Reference" "#PWR04"
-			(at 143.51 38.1 0)
+			(at 130.81 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3793,7 +4716,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 143.51 29.21 0)
+			(at 130.81 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3803,7 +4726,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 34.29 0)
+			(at 130.81 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3814,7 +4737,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 34.29 0)
+			(at 130.81 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3825,7 +4748,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 143.51 34.29 0)
+			(at 130.81 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3952,7 +4875,7 @@
 	)
 	(symbol
 		(lib_id "library:FSR_Interlink_0.2in")
-		(at 69.85 161.29 0)
+		(at 203.2 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3960,10 +4883,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6272f678-2d48-4427-8fd2-2dcbd08d712b")
 		(property "Reference" "RV1"
-			(at 69.85 154.94 0)
+			(at 203.2 62.484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3973,7 +4895,7 @@
 			)
 		)
 		(property "Value" "FSR 0.2in (FSR 400)"
-			(at 69.85 157.48 0)
+			(at 200.66 65.278 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3983,7 +4905,7 @@
 			)
 		)
 		(property "Footprint" "Gripper_Project:FSR_Interlink_0.2in_2P_P2.54mm"
-			(at 69.85 161.29 0)
+			(at 203.2 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3994,7 +4916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 161.29 0)
+			(at 203.2 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4005,7 +4927,7 @@
 			)
 		)
 		(property "Description" "Interlink Electronics 0.2in diameter force sensing resistor (FSR 400 series)"
-			(at 69.85 161.29 0)
+			(at 203.2 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4025,6 +4947,90 @@
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
 					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_Servo")
+		(at 48.26 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63e8f009-cadd-43fb-b7dc-ecde1b66642c")
+		(property "Reference" "M3"
+			(at 56.896 87.376 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor_Servo"
+			(at 56.896 89.916 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 94.996 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
+			(at 48.26 94.996 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
+			(at 48.26 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1cf065c-f20f-4f6f-b9d1-e2eecbe57fdd")
+		)
+		(pin "2"
+			(uuid "fcacb4b2-9fc9-4010-938a-f94f77cf7d01")
+		)
+		(pin "3"
+			(uuid "342981a4-c6b5-45a1-89dc-4c2aa77067e4")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "M3")
 					(unit 1)
 				)
 			)
@@ -4103,6 +5109,84 @@
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 38.1 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81cb6748-4a23-43e8-a2e2-688485ea67fe")
+		(property "Reference" "#PWR012"
+			(at 38.1 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "759c833c-bd99-49c5-a7f4-b8381e48a0e6")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -4268,7 +5352,7 @@
 	)
 	(symbol
 		(lib_id "library:HC-SR04")
-		(at 45.72 78.74 0)
+		(at 246.38 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4279,7 +5363,7 @@
 		(fields_autoplaced yes)
 		(uuid "9733aa37-70ed-4c7c-87b0-b41e7097f54c")
 		(property "Reference" "U2"
-			(at 57.15 78.7399 0)
+			(at 257.81 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4290,7 +5374,7 @@
 			)
 		)
 		(property "Value" "HC-SR04"
-			(at 57.15 81.2799 0)
+			(at 257.81 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4301,7 +5385,7 @@
 			)
 		)
 		(property "Footprint" "HC-SR04:XCVR_HC-SR04"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4313,7 +5397,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4324,7 +5408,7 @@
 			)
 		)
 		(property "Description" "Ultrasonic Sensor Module,Rectangular,20-4000 mm,5 V,15 mA,Arduino Compatible | OSEPP HC-SR04"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4336,7 +5420,7 @@
 			)
 		)
 		(property "MF" "OSEPP"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4348,7 +5432,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4360,7 +5444,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4372,7 +5456,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/HC-SR04/OSEPP/view-part/?ref=eda"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4384,7 +5468,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/HC-SR04/OSEPP/view-part/?ref=snap"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4396,7 +5480,7 @@
 			)
 		)
 		(property "MP" "HC-SR04"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4408,7 +5492,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4420,7 +5504,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Osepp"
-			(at 45.72 78.74 0)
+			(at 246.38 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4609,8 +5693,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Motor:Motor_Servo")
+		(at 48.26 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d70cafe6-c4da-4ddc-8302-666470a49209")
+		(property "Reference" "M2"
+			(at 56.896 75.946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor_Servo"
+			(at 56.896 78.486 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 83.566 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
+			(at 48.26 83.566 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
+			(at 48.26 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c30c97d2-ce97-4683-8163-f4121013d163")
+		)
+		(pin "2"
+			(uuid "411b43c9-3838-4e5b-8d75-b2e1e402c121")
+		)
+		(pin "3"
+			(uuid "fb5d2218-6ce5-47ff-904c-96570152f73b")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 38.1 86.36 0)
+		(at 238.76 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4621,7 +5789,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7d6ac5a-1c3e-4f96-9da4-25c24e73e40f")
 		(property "Reference" "#PWR02"
-			(at 38.1 92.71 0)
+			(at 238.76 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4632,7 +5800,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 91.44 0)
+			(at 238.76 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4642,7 +5810,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 86.36 0)
+			(at 238.76 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4653,7 +5821,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 86.36 0)
+			(at 238.76 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4664,7 +5832,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 86.36 0)
+			(at 238.76 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4681,6 +5849,169 @@
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 218.44 68.58 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e116e74f-2855-4d42-8986-e2375d225f85")
+		(property "Reference" "R1"
+			(at 218.694 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 218.694 66.04 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 70.358 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73998b2f-784e-4ef2-aafb-371a8abf042a")
+		)
+		(pin "2"
+			(uuid "88cd29cf-93a6-42ee-aa9b-e2648e8dcedc")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Motor_Servo")
+		(at 48.26 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e1e9826f-2de1-413f-9004-d6490954b24e")
+		(property "Reference" "M4"
+			(at 56.896 98.806 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Motor_Servo"
+			(at 56.896 101.346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 106.426 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://forums.parallax.com/uploads/attachments/46831/74481.png"
+			(at 48.26 106.426 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Servo Motor (Futaba, HiTec, JR connector)"
+			(at 48.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87720161-abd9-4d6e-8e2a-d891bdde8245")
+		)
+		(pin "2"
+			(uuid "1042bd7f-b4da-419e-a8ac-87a245109320")
+		)
+		(pin "3"
+			(uuid "8aa2d34f-5ad3-4b47-ab5d-e89cac55c7f0")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "M4")
 					(unit 1)
 				)
 			)
@@ -4846,7 +6177,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 90.17 0)
+		(at 133.35 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4857,7 +6188,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9ecabc8-c391-4aa7-b7b9-4a367ed97d32")
 		(property "Reference" "#PWR01"
-			(at 146.05 96.52 0)
+			(at 133.35 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4868,7 +6199,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.05 95.25 0)
+			(at 133.35 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4878,7 +6209,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 90.17 0)
+			(at 133.35 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4889,7 +6220,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 90.17 0)
+			(at 133.35 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4900,7 +6231,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 90.17 0)
+			(at 133.35 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4917,6 +6248,84 @@
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 223.52 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd79f2d5-7a8d-4c32-bad0-6656e1681344")
+		(property "Reference" "#PWR014"
+			(at 223.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d51573f-ee48-46dc-b2be-117dea8eb1b9")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
