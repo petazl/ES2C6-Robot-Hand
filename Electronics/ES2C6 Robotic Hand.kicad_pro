@@ -453,6 +453,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -500,8 +501,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -510,6 +511,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -620,7 +622,7 @@
     "meta": {
       "version": 1
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "Controller",
     "plot_directory": "",
     "reuse_designators": true,
     "subpart_first_id": 65,
@@ -632,13 +634,17 @@
         "uuid": "bf578e05-ff97-4f5b-9fce-fae906b02b66"
       }
     ],
-    "used_designators": "#PWR1-28,PS1-2,A1-2,R1-2,IC1-2,U1-4,M1-9,RV1-2",
+    "used_designators": "#PWR1-28,A1-2,IC1-2,M1-9,PS1-2,Potentiometer_S1-7,PotentionmeterE1,R1-2,RP1-3,RV1-2,U1-4",
     "variants": []
   },
   "sheets": [
     [
       "bf578e05-ff97-4f5b-9fce-fae906b02b66",
       "Root"
+    ],
+    [
+      "2a0e97f8-a7ea-425a-82fd-cd1825325ff5",
+      "Controller"
     ]
   ],
   "text_variables": {},
