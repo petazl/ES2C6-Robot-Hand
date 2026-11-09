@@ -145,6 +145,219 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" "POT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:Arduino_UNO_R3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2680,6 +2893,18 @@
 		(uuid "1a785456-1871-4bdb-8643-207ba663fe29")
 	)
 	(rectangle
+		(start 180.34 83.82)
+		(end 247.65 118.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "2c52342d-e84f-4f63-b87a-1e0616186696")
+	)
+	(rectangle
 		(start 250.19 19.05)
 		(end 275.59 46.99)
 		(stroke
@@ -2811,6 +3036,16 @@
 		)
 		(uuid "6aeff6c2-25c2-4f2e-9551-133b194aa912")
 	)
+	(text "Controller"
+		(exclude_from_sim no)
+		(at 214.376 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8ba0ccc1-5a5c-4468-ac69-b15a983ed2ba")
+	)
 	(text "Status LED"
 		(exclude_from_sim no)
 		(at 100.584 69.85 0)
@@ -2922,6 +3157,18 @@
 		(uuid "fa6088e5-eea3-4236-b8b1-8ac7c7a0c6c6")
 	)
 	(junction
+		(at 204.47 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "056cb5f2-bed3-47fe-b295-c02befbd72ad")
+	)
+	(junction
+		(at 212.09 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c7bb1b5-09d0-47d4-9f03-635551501f1a")
+	)
+	(junction
 		(at 31.75 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2932,6 +3179,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2fe970c8-9217-4551-a89e-b96dfce960f0")
+	)
+	(junction
+		(at 224.79 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d16d919-0eef-4b4e-973d-61f3f9fbc720")
 	)
 	(junction
 		(at 31.75 100.33)
@@ -2958,6 +3211,30 @@
 		(uuid "8a09bb2f-c35c-41dd-adc4-b2862be02f9c")
 	)
 	(junction
+		(at 194.31 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8dbeb588-9cb9-4e5e-9e0b-ba5df0329f85")
+	)
+	(junction
+		(at 232.41 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bd2aff9-3f30-4688-823b-396337fc5283")
+	)
+	(junction
+		(at 201.93 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2e1d75c-b1ea-464e-905d-14f8621e026b")
+	)
+	(junction
+		(at 222.25 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4c8ea25-5b88-45fa-b965-8c3afb67cd6a")
+	)
+	(junction
 		(at 30.48 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2968,6 +3245,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea168ed8-0047-41b3-97b0-fbf9251135dd")
+	)
+	(junction
+		(at 214.63 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef784a47-aff8-4033-b532-fb8d3fc4284e")
 	)
 	(no_connect
 		(at 138.43 39.37)
@@ -3107,6 +3390,26 @@
 	)
 	(wire
 		(pts
+			(xy 222.25 99.06) (xy 232.41 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1989ba57-13a8-48b8-9fea-00023c7a3adf")
+	)
+	(wire
+		(pts
+			(xy 198.12 93.98) (xy 198.12 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f48a8d3-7144-42c5-83e2-5ebffce5e299")
+	)
+	(wire
+		(pts
 			(xy 138.43 57.15) (xy 144.78 57.15)
 		)
 		(stroke
@@ -3117,6 +3420,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 96.52) (xy 214.63 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2470ae6e-a02a-4777-abb5-3c9deace6850")
+	)
+	(wire
+		(pts
 			(xy 30.48 80.01) (xy 33.02 80.01)
 		)
 		(stroke
@@ -3124,6 +3437,16 @@
 			(type default)
 		)
 		(uuid "24918715-5861-4dae-840e-fe47cc9c8c90")
+	)
+	(wire
+		(pts
+			(xy 208.28 93.98) (xy 208.28 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2623f20b-e288-40ef-a589-bd34ea6edf80")
 	)
 	(wire
 		(pts
@@ -3144,6 +3467,16 @@
 			(type default)
 		)
 		(uuid "2c4e9667-e9c7-46cd-9150-af46c10ab3a0")
+	)
+	(wire
+		(pts
+			(xy 194.31 96.52) (xy 194.31 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e73e26f-217c-4e6f-ae61-456f35f47694")
 	)
 	(wire
 		(pts
@@ -3194,6 +3527,36 @@
 			(type default)
 		)
 		(uuid "463251d5-3c37-427a-9673-1871c60cd988")
+	)
+	(wire
+		(pts
+			(xy 201.93 99.06) (xy 201.93 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49bafe8d-80fb-4915-8946-8c541ef66f80")
+	)
+	(wire
+		(pts
+			(xy 238.76 93.98) (xy 238.76 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a8e047b-d0a0-44c8-9d81-4fd20d7aa453")
+	)
+	(wire
+		(pts
+			(xy 228.6 93.98) (xy 228.6 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "502ecd40-35bd-4de3-859f-790b64bbe69b")
 	)
 	(wire
 		(pts
@@ -3257,6 +3620,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 99.06) (xy 242.57 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dc691aa-00b1-4b91-a95a-b8c779f4e3c6")
+	)
+	(wire
+		(pts
 			(xy 31.75 88.9) (xy 31.75 100.33)
 		)
 		(stroke
@@ -3284,6 +3657,16 @@
 			(type default)
 		)
 		(uuid "64cf44f0-acea-4085-8e2e-8d3ee1b3d887")
+	)
+	(wire
+		(pts
+			(xy 222.25 99.06) (xy 222.25 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68d490f4-bd55-464b-a2b8-dde9864e847d")
 	)
 	(wire
 		(pts
@@ -3324,6 +3707,16 @@
 			(type default)
 		)
 		(uuid "708fb45f-fb46-4422-a7ca-436ccb167653")
+	)
+	(wire
+		(pts
+			(xy 224.79 96.52) (xy 234.95 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71aa7ac1-f226-4fd5-92d5-8af7d83be793")
 	)
 	(wire
 		(pts
@@ -3374,6 +3767,16 @@
 			(type default)
 		)
 		(uuid "7bd8a950-7b40-407c-be4d-489763203631")
+	)
+	(wire
+		(pts
+			(xy 212.09 99.06) (xy 222.25 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c807449-d55a-4203-8f62-ffe0321c9d93")
 	)
 	(wire
 		(pts
@@ -3477,6 +3880,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 96.52) (xy 204.47 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98873bc0-09f9-4192-8b07-89771d2fb656")
+	)
+	(wire
+		(pts
 			(xy 125.73 82.55) (xy 125.73 83.82)
 		)
 		(stroke
@@ -3555,6 +3968,16 @@
 		)
 		(uuid "a06d762b-dc06-4fa9-b789-95c997540739")
 	)
+	(wire
+		(pts
+			(xy 232.41 99.06) (xy 232.41 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a98063e3-5ce2-45b4-b4a5-43d35baae2da")
+	)
 	(polyline
 		(pts
 			(xy 104.14 54.61) (xy 105.41 54.61)
@@ -3607,6 +4030,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 96.52) (xy 224.79 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b49340db-69fb-4cd3-9219-f480c4ca97e5")
+	)
+	(wire
+		(pts
 			(xy 33.02 111.76) (xy 31.75 111.76)
 		)
 		(stroke
@@ -3624,6 +4057,16 @@
 			(type default)
 		)
 		(uuid "b9e6fd3e-d75a-46a1-8e7e-a009e441fb38")
+	)
+	(wire
+		(pts
+			(xy 191.77 99.06) (xy 212.09 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbdd6090-464f-4f40-a54f-f7e86ed4ef51")
 	)
 	(polyline
 		(pts
@@ -3694,6 +4137,36 @@
 			(type default)
 		)
 		(uuid "c09ce5b1-c8fc-4ab1-8a7a-143b1aa2e605")
+	)
+	(wire
+		(pts
+			(xy 232.41 99.06) (xy 242.57 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c53bd93c-3ed3-48d5-93ea-34a9fd0cbb7a")
+	)
+	(wire
+		(pts
+			(xy 212.09 99.06) (xy 212.09 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c69abdc7-483d-4767-aab5-f8e9201e9619")
+	)
+	(wire
+		(pts
+			(xy 218.44 93.98) (xy 218.44 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9fd84d7-aa6e-4af6-b78b-c7bdeb4e877b")
 	)
 	(wire
 		(pts
@@ -3787,6 +4260,26 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 96.52) (xy 204.47 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e188ad37-9a1c-4174-9641-e8b5e64f80da")
+	)
+	(wire
+		(pts
+			(xy 234.95 96.52) (xy 234.95 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4c8469d-e5a5-4bb8-8087-cb0d8b9da472")
+	)
+	(wire
+		(pts
 			(xy 30.48 91.44) (xy 33.02 91.44)
 		)
 		(stroke
@@ -3827,6 +4320,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.79 96.52) (xy 224.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eda5ac48-913d-4190-bd36-4cab364fcf7c")
+	)
+	(wire
+		(pts
 			(xy 30.48 102.87) (xy 30.48 91.44)
 		)
 		(stroke
@@ -3854,6 +4357,16 @@
 			(type default)
 		)
 		(uuid "f262a91e-2791-4fc8-a1bb-2c7ab0c93cd8")
+	)
+	(wire
+		(pts
+			(xy 204.47 96.52) (xy 214.63 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f890e945-7519-4918-9ee4-5e47e35ff283")
 	)
 	(wire
 		(pts
@@ -4215,6 +4728,126 @@
 		)
 		(uuid "ea9d48ad-2e9c-4fbe-95a0-42986ea3692f")
 	)
+	(global_label "A2"
+		(shape output)
+		(at 208.28 93.98 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6554946b-0df1-42d1-b1fc-b40e584a2e14")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 208.28 88.6967 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "A3"
+		(shape output)
+		(at 218.44 93.98 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c1324f3-4f72-42a2-9815-d518d71c823c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 88.6967 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "A5"
+		(shape output)
+		(at 238.76 93.98 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f1735f4-8e07-46ed-8f0b-321ef7e112af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.76 88.6967 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "A1"
+		(shape output)
+		(at 198.12 93.98 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d4c4962b-8d77-4e55-bafb-f9becc6f4482")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 88.6967 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "A4"
+		(shape output)
+		(at 228.6 93.98 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dea9e886-37a3-4843-89a8-40ecc095152c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.6 88.6967 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(symbol
 		(lib_id "power:+12V")
 		(at 270.51 29.21 0)
@@ -4366,6 +4999,122 @@
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 198.12 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0471b74c-dadc-4f35-a0f7-81aa32a7b656")
+		(property "Reference" "RP1x"
+			(at 198.12 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 198.12 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 198.12 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0d32ffb7-4dca-4f73-9917-6f9d439dfb72")
+		)
+		(pin "3"
+			(uuid "8703a43a-3f07-4139-8faf-e166261bda25")
+		)
+		(pin "1"
+			(uuid "d9ae4656-d4ba-4c59-96e6-84ad166e4973")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "RP1x")
 					(unit 1)
 				)
 			)
@@ -5125,6 +5874,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 191.77 99.06 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20bd1d83-a80d-4a2f-be97-f02fd457c17e")
+		(property "Reference" "#PWR018"
+			(at 185.42 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 99.0599 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 191.77 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "586b4730-1652-42b7-a781-9ec261009f2d")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_Servo")
 		(at 40.64 77.47 0)
 		(unit 1)
@@ -5203,6 +6031,238 @@
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
 					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 238.76 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f9f89b5-a033-4b7b-8385-fe58ab3bcdf2")
+		(property "Reference" "RP4"
+			(at 238.76 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 238.76 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 238.76 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 238.76 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 238.76 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 238.76 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2290db02-44a3-438b-aab3-b9b7846420b5")
+		)
+		(pin "1"
+			(uuid "4501dad9-74c6-4072-9e34-e58df82a6994")
+		)
+		(pin "3"
+			(uuid "8d74dce8-3eb2-4aba-8b69-c6897074aeae")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "RP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 218.44 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ef3ab39-9d9b-4234-9560-4836f20b0259")
+		(property "Reference" "RP2"
+			(at 218.44 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 218.44 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 218.44 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 218.44 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 218.44 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 218.44 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9baa1747-2df7-4c33-80a6-9e1b5b68c741")
+		)
+		(pin "3"
+			(uuid "e5065e12-5f2f-4acc-967e-0dfec0a6549f")
+		)
+		(pin "1"
+			(uuid "717edf34-6ea5-4042-8854-139674133f11")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "RP2")
 					(unit 1)
 				)
 			)
@@ -5455,6 +6515,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 191.77 96.52 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "749aaf49-0831-4cf0-b9c6-63c451baf12d")
+		(property "Reference" "#PWR017"
+			(at 195.58 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 187.96 96.5199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 191.77 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5e06de04-b214-4171-a618-0aca5db32515")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Motor:Motor_Servo")
 		(at 40.64 100.33 0)
 		(unit 1)
@@ -5695,6 +6834,122 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 208.28 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "943bbb4d-5b25-4199-a630-b430bf3a57ca")
+		(property "Reference" "RP1y"
+			(at 208.28 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 208.28 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 208.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 208.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 208.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 208.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7074b751-7b0b-4ea9-ba2a-639a4b9255b6")
+		)
+		(pin "2"
+			(uuid "a2be68d9-2e2d-4e7d-8aa8-c46698151ea0")
+		)
+		(pin "3"
+			(uuid "db8710fd-cc8a-4068-a16d-ccd41fd11579")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "RP1y")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 130.81 27.94 0)
 		(unit 1)
@@ -5924,6 +7179,122 @@
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 228.6 105.41 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0834673-c21d-4f1b-a14b-5482bc9d0d4c")
+		(property "Reference" "RP3"
+			(at 228.6 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 228.6 111.76 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 228.6 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 228.6 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 228.6 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 228.6 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "31796ff1-4460-4257-8ffe-dd0080f5cf4c")
+		)
+		(pin "2"
+			(uuid "2c1a3091-77ce-4feb-856c-ea53c423b402")
+		)
+		(pin "3"
+			(uuid "1ebe8782-54ad-42ff-a3ca-f52c3f0539eb")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "RP3")
 					(unit 1)
 				)
 			)

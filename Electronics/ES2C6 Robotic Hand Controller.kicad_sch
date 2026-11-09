@@ -1194,7 +1194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "927782e0-390d-4618-a28e-50e40c5e3292")
-		(property "Reference" "RP4y"
+		(property "Reference" "RP4y1"
 			(at 44.45 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1292,7 +1292,7 @@
 		(instances
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66/2a0e97f8-a7ea-425a-82fd-cd1825325ff5"
-					(reference "RP4y")
+					(reference "RP4y1")
 					(unit 1)
 				)
 			)
@@ -1505,7 +1505,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9c8ca42-2ac5-4243-80c1-8ed8d8f2cdb6")
-		(property "Reference" "RP4x"
+		(property "Reference" "RP4x1"
 			(at 34.29 55.88 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1603,7 +1603,7 @@
 		(instances
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66/2a0e97f8-a7ea-425a-82fd-cd1825325ff5"
-					(reference "RP4x")
+					(reference "RP4x1")
 					(unit 1)
 				)
 			)
