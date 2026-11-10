@@ -3704,145 +3704,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+12V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -7305,6 +7166,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+9V")
+		(at 124.46 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14ff5740-62a0-4615-937e-79578efe513e")
+		(property "Reference" "#PWR04"
+			(at 124.46 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+9V"
+			(at 124.46 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 124.46 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f2fd24d-26ca-48bf-a2b7-6eb277ebe86d")
+		)
+		(instances
+			(project "ES2C6 Robotic Hand"
+				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "library:Makeblock_Gripper_12V_Motor")
 		(at 50.8 52.07 0)
 		(unit 1)
@@ -7395,7 +7334,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "189dd56f-2565-45b5-96da-d28b8a5850aa")
-		(property "Reference" "M5"
+		(property "Reference" "M6"
 			(at 56.896 117.856 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7462,7 +7401,7 @@
 		(instances
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
-					(reference "M5")
+					(reference "M6")
 					(unit 1)
 				)
 			)
@@ -8124,7 +8063,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2b273a5b-cdac-4970-94cf-64e5c3440828")
-		(property "Reference" "M1"
+		(property "Reference" "M2"
 			(at 56.896 72.136 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8191,7 +8130,7 @@
 		(instances
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
-					(reference "M1")
+					(reference "M2")
 					(unit 1)
 				)
 			)
@@ -8482,7 +8421,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5b6c71e1-d20b-439c-9980-8a006b6f9fbb")
-		(property "Reference" "M2"
+		(property "Reference" "M3"
 			(at 56.896 83.566 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8549,7 +8488,7 @@
 		(instances
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
-					(reference "M2")
+					(reference "M3")
 					(unit 1)
 				)
 			)
@@ -9009,7 +8948,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6fea6f62-8a7e-44e4-b934-9516fbac104a")
-		(property "Reference" "M4"
+		(property "Reference" "M5"
 			(at 56.896 106.426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9076,7 +9015,7 @@
 		(instances
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
-					(reference "M4")
+					(reference "M5")
 					(unit 1)
 				)
 			)
@@ -9295,7 +9234,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "76723de4-f64c-4428-81df-f2fc97ec601c")
-		(property "Reference" "M3"
+		(property "Reference" "M4"
 			(at 56.896 94.996 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9362,7 +9301,7 @@
 		(instances
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
-					(reference "M3")
+					(reference "M4")
 					(unit 1)
 				)
 			)
@@ -10601,84 +10540,6 @@
 			(project "ES2C6 Robotic Hand"
 				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
 					(reference "RV4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 124.46 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e01c49cb-446d-40c5-8958-f23e106be0d7")
-		(property "Reference" "#PWR04"
-			(at 124.46 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+9V"
-			(at 122.428 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 124.46 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 124.46 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 124.46 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "18bacaa6-f619-41aa-a7c4-23359e07c6cc")
-		)
-		(instances
-			(project "ES2C6 Robotic Hand"
-				(path "/bf578e05-ff97-4f5b-9fce-fae906b02b66"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
