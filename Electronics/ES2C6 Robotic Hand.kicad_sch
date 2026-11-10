@@ -3599,25 +3599,23 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "PS1"
-				(at -7.62 -1.2701 0)
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
-			(property "Value" "12V 1A 12W"
-				(at -7.62 1.2699 0)
+			(property "Value" "9V"
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
 				)
 			)
 			(property "Footprint" ""
@@ -3642,7 +3640,7 @@
 					)
 				)
 			)
-			(property "Description" "12V, 1A, 12W plug-in power supply (barrel plug, center-positive assumed - VERIFY)"
+			(property "Description" "12V, 1A, 12W RATED plug-in power supply (barrel plug, center-positive assumed - VERIFY)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3670,7 +3668,7 @@
 				(pin power_out line
 					(at 8.89 1.27 180)
 					(length 2.54)
-					(name "+12V"
+					(name "+9V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4383,6 +4381,17 @@
 		)
 		(uuid "e9428742-aef1-4a9a-838e-9ee74b959e89")
 	)
+	(text "bulk cap 5V GND\nelectrolytic capacitor 470-1000 µF"
+		(exclude_from_sim no)
+		(at 22.352 100.33 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 5 1)
+			)
+		)
+		(uuid "00eadff4-2c76-4bf5-b70e-42c903cecbf9")
+	)
 	(text "Potentiometers\n"
 		(exclude_from_sim no)
 		(at 199.39 43.434 0)
@@ -4422,6 +4431,17 @@
 			)
 		)
 		(uuid "1d51961c-4368-4b2b-af20-d4d68ac0704c")
+	)
+	(text "decoupling cap VCC GND\n100 nF ceramic capacitor X7R\n\n\n"
+		(exclude_from_sim no)
+		(at 66.802 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 5 1)
+			)
+		)
+		(uuid "2e996553-3b15-439b-ba3b-7a705735979c")
 	)
 	(text "Joystick\n"
 		(exclude_from_sim no)
@@ -4495,7 +4515,7 @@
 	)
 	(text "Gripper Control"
 		(exclude_from_sim no)
-		(at 97.028 101.6 0)
+		(at 96.774 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4515,7 +4535,7 @@
 	)
 	(text "Sensor"
 		(exclude_from_sim no)
-		(at 97.79 85.09 0)
+		(at 98.298 102.616 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4603,6 +4623,17 @@
 		)
 		(uuid "d2ab99e0-eb0a-45c9-b497-5e733e6068e5")
 	)
+	(text "decoupling cap V+ V-\n100 nF ceramic capacitor X7R\n"
+		(exclude_from_sim no)
+		(at 125.73 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 5 1)
+			)
+		)
+		(uuid "d57b7604-4fd4-4469-9406-e2f7a1e12ed0")
+	)
 	(text "Ultrasonic Sensor\n"
 		(exclude_from_sim no)
 		(at 251.206 17.526 0)
@@ -4615,7 +4646,7 @@
 	)
 	(text "Ultrasonic"
 		(exclude_from_sim no)
-		(at 97.536 83.058 0)
+		(at 98.044 100.584 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6393,7 +6424,7 @@
 		)
 		(uuid "22292ad0-4854-485a-95de-7f042d0d6b81")
 	)
-	(label "D10"
+	(label "D2"
 		(at 33.02 40.64 0)
 		(effects
 			(font
@@ -6433,7 +6464,7 @@
 		)
 		(uuid "35db4c0e-ade5-4a6e-9793-dea92544a076")
 	)
-	(label "D9"
+	(label "D3"
 		(at 33.02 38.1 0)
 		(effects
 			(font
@@ -6603,7 +6634,7 @@
 		)
 		(uuid "7dc733d2-eb56-44d2-9003-70889a9cf5e1")
 	)
-	(label "D2"
+	(label "D9"
 		(at 238.76 29.21 0)
 		(effects
 			(font
@@ -6693,7 +6724,7 @@
 		)
 		(uuid "b0670d41-0f46-4d75-9b49-03495914075f")
 	)
-	(label "D3"
+	(label "D10"
 		(at 238.76 31.75 0)
 		(effects
 			(font
@@ -10753,7 +10784,7 @@
 				)
 			)
 		)
-		(property "Value" "12V 1A 12W"
+		(property "Value" "9V"
 			(at 250.19 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10785,7 +10816,7 @@
 				)
 			)
 		)
-		(property "Description" "12V, 1A, 12W plug-in power supply (barrel plug, center-positive assumed - VERIFY)"
+		(property "Description" "12V, 1A, 12W RATED plug-in power supply (barrel plug, center-positive assumed - VERIFY)"
 			(at 250.19 107.95 0)
 			(hide yes)
 			(show_name no)
