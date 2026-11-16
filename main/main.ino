@@ -93,13 +93,16 @@ struct GripperSettings {
     byte speed;
     byte closeDirection;
     unsigned long closeTimeMs;
-    unsigned long openTimeMs;
+    unsigned long fullOpenTimeMs;
 };
 
 GripperState gripperState = READY;
 unsigned long gripperStartedAt = 0;
+unsigned long gripperClosingMs = 0;  // Time spent driving closed since the last release.
+unsigned long gripperOpeningMs = 0;
+bool gripperReleased = false;
 byte clearSamples = 0;
-// Force, PWM, close direction, close timeout, open duration.
+// Force, PWM, close direction, close timeout, full-stroke opening time.
 // The two-second close timeout is a starting point for bench calibration.
 const GripperSettings GRIPPER_SETTINGS{200, 150, HIGH, 2000, 10000};
 
@@ -217,12 +220,35 @@ void driveGripper(byte direction, byte speed) {
     analogWrite(GRIPPER_PWM, speed);
 }
 
+void recordGripperClose(unsigned long now, unsigned long fullOpenTimeMs) {
+    const unsigned long elapsed = now - gripperStartedAt;
+    const unsigned long remaining = fullOpenTimeMs - gripperClosingMs;
+    gripperClosingMs += elapsed < remaining ? elapsed : remaining;
+}
+
+void waitForGripperClear() {
+    analogWrite(GRIPPER_PWM, 0);
+    gripperState = WAIT_CLEAR;
+    clearSamples = 0;
+}
+
 void updateGripper(unsigned long now, bool release, bool rangeUpdated, bool objectNear,
                    int force, const GripperSettings &settings) {
     if (release && gripperState != OPENING) {
-        gripperState = OPENING;
-        gripperStartedAt = now;
-        driveGripper(!settings.closeDirection, settings.speed);
+        if (gripperState == CLOSING) {
+            recordGripperClose(now, settings.fullOpenTimeMs);
+        }
+        gripperOpeningMs = gripperClosingMs;
+        if (gripperOpeningMs == 0 && !gripperReleased) {
+            gripperOpeningMs = settings.fullOpenTimeMs;  // Starting jaw position is unknown.
+        }
+        if (gripperOpeningMs > 0) {
+            gripperState = OPENING;
+            gripperStartedAt = now;
+            driveGripper(!settings.closeDirection, settings.speed);
+        } else {
+            waitForGripperClear();
+        }
         return;
     }
 
@@ -240,21 +266,21 @@ void updateGripper(unsigned long now, bool release, bool rangeUpdated, bool obje
             break;
         case CLOSING:
             if (force >= settings.forceThreshold) {
+                recordGripperClose(now, settings.fullOpenTimeMs);
                 analogWrite(GRIPPER_PWM, 0);
                 gripperState = HOLDING;
             } else if (now - gripperStartedAt >= settings.closeTimeMs) {
-                analogWrite(GRIPPER_PWM, 0);
-                gripperState = WAIT_CLEAR;
-                clearSamples = 0;
+                recordGripperClose(now, settings.fullOpenTimeMs);
+                waitForGripperClear();
             }
             break;
         case HOLDING:
             break;
         case OPENING:
-            if (now - gripperStartedAt >= settings.openTimeMs) {
-                analogWrite(GRIPPER_PWM, 0);
-                gripperState = WAIT_CLEAR;
-                clearSamples = 0;
+            if (now - gripperStartedAt >= gripperOpeningMs) {
+                gripperClosingMs = 0;
+                gripperReleased = true;
+                waitForGripperClear();
             }
             break;
         case WAIT_CLEAR:
