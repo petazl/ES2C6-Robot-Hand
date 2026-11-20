@@ -4592,16 +4592,6 @@
 		)
 		(uuid "01a2db4a-d669-49e3-9923-beaf4896e1bf")
 	)
-	(text "IMU"
-		(exclude_from_sim no)
-		(at 150.876 104.648 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0cfc1b7b-200a-49b0-8cb8-6ef4acd4af04")
-	)
 	(text "LED"
 		(exclude_from_sim no)
 		(at 203.708 125.984 0)
@@ -5406,16 +5396,6 @@
 		)
 		(uuid "49efe62b-b18b-4946-b7bc-38614f8f8bee")
 	)
-	(polyline
-		(pts
-			(xy 147.32 102.87) (xy 148.59 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ccd6a2f-5a55-4f66-b108-ae389f242422")
-	)
 	(wire
 		(pts
 			(xy 186.69 59.69) (xy 180.34 59.69)
@@ -5895,16 +5875,6 @@
 			(type default)
 		)
 		(uuid "8b94d594-909f-49c9-9dfd-9922bbeb10df")
-	)
-	(polyline
-		(pts
-			(xy 148.59 102.87) (xy 148.59 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c23c667-87fb-4dfd-b836-a86f2d09ef4a")
 	)
 	(wire
 		(pts
@@ -6715,16 +6685,6 @@
 			(type default)
 		)
 		(uuid "f414c10a-1de6-4c5a-9bef-325c01938b92")
-	)
-	(polyline
-		(pts
-			(xy 147.32 105.41) (xy 148.59 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa111326-94be-4f91-a0ea-4d5314027172")
 	)
 	(wire
 		(pts
