@@ -1,46 +1,53 @@
-# ES2C6 robotic arm firmware
+# ES2C6 revised arm firmware
 
-Open `main.ino` in Arduino IDE, select **Arduino Uno** and the board's port, and build or upload the sketch. Keep `Stabilization.h` beside `main.ino`. The sketch uses the Arduino `Servo` and `Wire` libraries.
+This sketch follows `ES2C6 Robotic Hand Revised.kicad_sch` and runs on an Arduino Uno R3. Open `main.ino` in Arduino IDE, install the Arduino Servo library if needed, select Arduino Uno and the board's port, then verify and upload.
 
-## Operating the arm
+## Controls and wiring
 
-Start with the joystick centered, the arm supported, and the ultrasonic sensor pointed at clear space. The arm starts in manual mode. The three SG90s start at 90° and move toward the positions set on the pots.
-
-| Input | Manual control | Servo pin |
+| Control or device | Uno connection | Function |
 | --- | --- | --- |
-| Joystick left/right | Turn the base | D4 |
-| Joystick up/down | Rotate the wrist | D8 |
-| POT1 | Set shoulder angle | D5 |
-| POT2 | Set elbow angle | D6 |
-| POT3 | Set vertical wrist angle | D7 |
+| Joystick X | A4 | Left/right turns the FS90R base on D4 |
+| Joystick Y | A5 | Connected in the schematic and unused by the program |
+| POT1 | A1 | Sets shoulder SG90 angle on D5 |
+| POT2 | A2 | Sets elbow SG90 angle on D6 |
+| POT3 | A3 | Sets vertical wrist SG90 angle on D7 |
+| Joystick button | D11 | Press to release the gripper |
+| Force sensor | A0 | Stops closing at the configured force reading |
+| HC-SR04 | Trigger D8, echo D9 | Detects objects near the gripper |
+| Gripper driver | Direction D2, PWM D3 | Closes and opens the gripper motor |
+| Status LED | D10 | Lights while the firmware is running |
 
-The two FS90Rs turn while you hold the stick and stop when you center it. Watch for cable twist as those joints rotate. Each pot sets a target angle for its SG90, and the firmware limits how quickly the target is approached.
+Center the joystick and support the arm before power-up. The base starts stopped. The three SG90s start at 90° and approach their pot positions at the configured slew rate. Each pot sets an angle directly. Holding the joystick left or right controls base speed and direction, and centering it commands the base to stop. Watch cable twist as the base rotates.
 
-- **Gripper.** An object within about 15 cm starts closing the gripper. The motor stops at the force threshold or close timeout. Tap and release the joystick button to open in either mode. The gripper reverses for the time the motor spent closing, capped at 10 seconds. A release just after power-up with no recorded closing time uses the full 10 seconds. Move the object away after opening so the gripper can rearm.
-- **Stabilization.** Once calibrated, hold the joystick button for about 0.8 seconds to capture the current claw orientation. The status LED lights up. Joystick left/right trims heading and up/down trims roll. The pots resume control when you hold the button again to return to manual mode.
+An object within about 15 cm starts closing the gripper. The motor stops when the force reading reaches the threshold or the close timeout expires. A button press starts release after 25 ms of debounce. Holding it produces one release event.
 
-## Changing settings
+The gripper records time spent driving closed and reverses for that duration on release, capped at 10 seconds. Holding time is excluded. Partial and timed-out closing attempts accumulate until a release finishes. At startup, a release with no recorded closing time uses the full 10 seconds because the jaw position is unknown. After opening or a close timeout, three readings outside the detection zone rearm automatic closing. A missing echo also counts as clear.
 
-Edit these values near the top of `main.ino`, then rebuild and upload. Change one setting at a time during bench testing.
+## Changing parameters
 
-| What to adjust | Settings |
+Edit the constants near the top of `main.ino`, rebuild, and upload. Check direction and travel with the arm supported.
+
+| Setting | Default and purpose |
 | --- | --- |
-| A centered joystick still gives a command | `STICK_CENTER` (512) and `STICK_DEADBAND` (32) are raw analog counts. If the stick is centered and a servo still creeps, tune that FS90R's `BASE_STOP_US` or `WRIST_ROLL_STOP_US` around 1500 µs. |
-| Joystick direction or speed | Flip `JOYSTICK_X_DIRECTION` or `JOYSTICK_Y_DIRECTION` between `1` and `-1`. Lower `MANUAL_SWING_US` for less maximum drive. |
-| SG90 travel and response | The `SHOULDER_*`, `ELBOW_*`, and `WRIST_TILT_*` angle limits start at 20–150°, 30–160°, and 20–160°. Set each pair within the assembled joint's clearance. `POT_SLEW_RATE` controls how quickly the command approaches the pot angle. |
-| Gripper response | `GRIPPER_SETTINGS` is `{force threshold, PWM, closing direction, close timeout, full-stroke opening time}`. Defaults are `{200, 150, HIGH, 2000, 10000}`. Force is a raw ADC reading, PWM ranges from 0 to 255, and both times are in milliseconds. The full-stroke time caps all releases. Check that the close timeout gives the jaws enough time to reach your objects at the chosen PWM. |
-| Detection range or hold time | `NEAR_ECHO_US` is the ultrasonic round-trip time, roughly 58 µs per centimetre. Keep it below `ECHO_TIMEOUT_US`. `LONG_PRESS_MS` sets the button hold time in milliseconds. |
+| `STICK_CENTER`, `STICK_DEADBAND` | 512 and 32 raw ADC counts. Center readings from 480 through 544 command a stop. |
+| `BASE_STOP_US` | 1500 µs. Adjust until the FS90R stays still with the joystick centered. |
+| `MANUAL_SWING_US` | 300 µs. Reduce for a slower maximum base command. Output stays between `FS90R_MIN_US` and `FS90R_MAX_US`. |
+| `JOYSTICK_X_DIRECTION`, `BASE_DIRECTION` | Use 1 or -1. Reversing either one reverses base movement. |
+| `SHOULDER_DIRECTION`, `ELBOW_DIRECTION`, `WRIST_TILT_DIRECTION` | Use 1 or -1 to reverse a pot-controlled joint around its center. |
+| `SHOULDER_MIN/MAX` | 20–150° command limits inherited from the previous sketch. |
+| `ELBOW_MIN/MAX` | 30–160° command limits inherited from the previous sketch. |
+| `WRIST_TILT_MIN/MAX` | 20–160° command limits inherited from the previous sketch. Check each joint's assembled clearance. |
+| `SG90_MIN_US`, `SG90_MAX_US` | 1000 and 2000 µs for the nominal 0–180° command mapping. Check actual horn travel on the bench. |
+| `POT_SLEW_RATE` | 120 commanded degrees per second. Sets how quickly the servo command approaches a changed pot target. |
+| `NEAR_ECHO_US` | 875 µs, approximately 15 cm. Allow roughly 58 µs per centimetre. Keep it below `ECHO_TIMEOUT_US` (3000 µs). |
+| `BUTTON_DEBOUNCE_MS` | 25 ms. Filters switch bounce. |
 
-### First stabilization setup
+`GRIPPER_SETTINGS` contains `{force threshold, PWM, closing direction, close timeout, full opening time}`. The defaults are `{200, 150, HIGH, 2000, 10000}`. Force is a raw ADC reading from 0 to 1023, PWM is from 0 to 255, and both times are in milliseconds. Change `HIGH` to `LOW` if closing runs backwards. The two-second close cutoff needs bench calibration, especially if small objects take longer to reach. The 10-second full opening time is the measured full-stroke reference and the maximum release duration.
 
-1. Set `IMU_FORWARD`, `IMU_LEFT`, and `IMU_UP` to match the mounted IMU. Use `±1` for sensor X, `±2` for Y, and `±3` for Z. Pick one of each so forward × left points up.
-2. Verify `JOINT_DIRECTION` in base, shoulder, elbow, vertical wrist, wrist rotation order. A positive base correction turns left, positive pitch tips the claw down, and positive roll lifts its left side.
-3. Set `stabilizationCalibrated` to `true` and upload. Keep the claw still for about a second after the servos settle so the gyro can calibrate. Start with small movements and return to manual mode if a joint corrects the wrong way.
+## Program flow
 
-`TRIM_RATE` sets how fast the joystick shifts the held orientation. `MAX_CORRECTION_RATE`, `WRIST_PITCH_RATE`, and `STABILIZATION_SWING_US` limit the correction commands. The proportional, integral, and derivative gains are in `Pid::update()` in `Stabilization.h`. Tune those after verifying the axes, joint directions, and neutral pulses.
+`setup()` stops the gripper and base, centers the SG90 commands, enables the button's internal pull-up, and lights the status LED. The main loop polls force and button inputs, samples distance every 60 ms, and updates the four joint commands every 20 ms.
 
-## How the code works
+`controlBase()` maps stick deflection to the FS90R pulse. `followPot()` reads each pot directly and moves its SG90 command toward the mapped angle. `updateGripper()` steps through READY, CLOSING, HOLDING, OPENING, and WAIT_CLEAR while joint control continues. The echo read can wait up to 3 ms for a response.
 
-`readMux()` selects one of the three pots, two stick axes, or the button on the 74HC4051 and discards the first reading after a channel change. The main loop checks the button and force sensor, samples distance every 60 ms, and updates arm control every 20 ms. The gripper has its own state machine. It counts only time spent driving closed, including partial or timed-out attempts, and clears that count after release. Opening by time estimates jaw travel, so check the actual release on the bench.
-
-The stabilization filter combines gyro readings with gravity from the accelerometer. PID compares the estimated orientation with the captured target. The base corrects heading, the rotation wrist corrects roll, and the vertical wrist corrects pitch first, with help from the elbow and shoulder when needed. The mode holds orientation only. Heading is relative and can drift, and correction has less authority with the claw pointed nearly straight up or down. If an IMU read fails, continuous rotation stops for that update and the arm returns to manual mode.
+Use the external servo supply shown in the schematic with a common ground to the Uno. The base's neutral pulse and each SG90's pulse-to-angle mapping need checks on the actual servos. Release timing estimates jaw travel, so verify the object clears the jaws. The virtual tests check firmware behavior with simulated inputs, and physical performance needs a bench test.
